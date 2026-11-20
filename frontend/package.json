@@ -1,0 +1,34 @@
+{
+  "name": "auto-parts-web",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:mock": "vite --mode mock",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource/aref-ruqaa": "^5.3.0",
+    "@fontsource/ibm-plex-sans-arabic": "^5.3.0",
+    "@fontsource/lalezar": "^5.3.0",
+    "@fontsource/reem-kufi": "^5.3.0",
+    "@tanstack/react-query": "^5.104.1",
+    "jalaali-js": "^2.0.1",
+    "jsbarcode": "^3.12.3",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-router-dom": "^7.18.4",
+    "read-excel-file": "^9.3.12",
+    "write-excel-file": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/jalaali-js": "^1.2.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4"
+  }
+}

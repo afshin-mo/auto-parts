@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\modules",
+    "\\src\\modules\\inventory"
+  ],
+  "SelectedNode": "\\src\\modules\\inventory\\inventory.service.ts",
+  "PreviewInSolutionExplorer": false
+}
