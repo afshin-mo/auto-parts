@@ -66,6 +66,8 @@ export const PERMISSIONS: PermissionDef[] = [
         ['checks.manage', 'ثبت و تعیین وضعیت چک', 'AMC'],
         ['expenses.view', 'مشاهده‌ی هزینه‌ها', 'AMC'],
         ['expenses.manage', 'ثبت و حذف هزینه', 'AMC'],
+        ['withdrawals.view', 'مشاهده‌ی برداشت‌ها از حساب فروشگاه', 'AM'],
+        ['withdrawals.manage', 'ثبت و حذف برداشت از حساب فروشگاه', 'AM'],
     ]),
     ...G('گزارش‌ها', [
         ['reports.sales', 'گزارش فروش', 'AMC'],

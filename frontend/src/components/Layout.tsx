@@ -28,6 +28,7 @@ const NAV: NavItem[] = [
   { to: '/debts', label: 'بدهکاران و بستانکاران', icon: 'clock', perms: ['reports.debts'] },
   { to: '/payments', label: 'دریافت و پرداخت', icon: 'wallet', perms: ['payments.view'] },
   { to: '/expenses', label: 'هزینه‌ها', icon: 'tag', perms: ['expenses.view'] },
+  { to: '/withdrawals', label: 'برداشت از حساب', icon: 'wallet', perms: ['withdrawals.view'] },
   { to: '/checks', label: 'چک‌ها', icon: 'cheque', perms: ['checks.view'] },
   { to: '/reports', label: 'گزارش‌ها', icon: 'chart', perms: ['reports.sales', 'reports.products', 'reports.profit', 'reports.debts'] },
   { to: '/catalog', label: 'اطلاعات پایه', icon: 'car' },

@@ -856,6 +856,27 @@ model Expense {
   @@map("expenses")
 }
 
+// برداشت از حساب فروشگاه (شریک، کارمند یا صاحب فروشگاه). «هزینه» نیست و عمداً در سود و زیان حساب نمی‌شود.
+model Withdrawal {
+  id          String        @id @default(uuid())
+  tenantId    String        @map("tenant_id")
+  branchId    String?       @map("branch_id")
+
+  personName  String        @map("person_name") @db.VarChar(120)
+  amount      Decimal       @db.Decimal(15, 2)
+  method      PaymentMethod @default(CASH)
+  date        DateTime      @default(now())
+  description String?       @db.Text
+
+  createdBy   String        @map("created_by")
+  createdAt   DateTime      @default(now()) @map("created_at")
+
+  @@index([tenantId, date])
+  @@index([tenantId, personName])
+  @@index([tenantId, branchId, date])
+  @@map("withdrawals")
+}
+
 model SmsLog {
   id           String   @id @default(uuid())
   tenantId     String   @map("tenant_id")

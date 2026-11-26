@@ -19,6 +19,7 @@ import { ProductsModule } from './modules/products/products.module';
 import { PartiesModule } from './modules/parties/parties.module';
 import { InventoryModule } from './modules/inventory/inventory.module';
 import { DuplicatesModule } from './modules/duplicates/duplicates.module';
+import { WithdrawalsModule } from './modules/withdrawals/withdrawals.module';
 import { SalesModule } from './modules/sales/sales.module';
 import { PurchasesModule } from './modules/purchases/purchases.module';
 import { PaymentsModule } from './modules/payments/payments.module';
@@ -53,7 +54,7 @@ import { AuditInterceptor } from './common/interceptors/audit.interceptor';
         PrismaModule,
         AuthModule, TenantsModule, UsersModule,
         BrandsModule, CategoriesModule, UnitsModule, WarehousesModule, VehiclesModule,
-        ProductsModule, PartiesModule, InventoryModule, DuplicatesModule,
+        ProductsModule, PartiesModule, InventoryModule, DuplicatesModule, WithdrawalsModule,
         SalesModule, PurchasesModule, PaymentsModule, ChecksModule, ReportsModule,
         ReturnsModule, ProformasModule, ExpensesModule, AuditModule, MoodianModule, SmsModule, OnlinePaymentsModule,
         BranchesModule, RolesModule, DataImportModule,

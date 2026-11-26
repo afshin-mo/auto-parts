@@ -9,6 +9,7 @@ const RULES: [RegExp, string][] = [
   [/^POST \/inventory\/adjust/, 'اصلاح موجودی'], [/^POST \/inventory\/transfer/, 'انتقال بین انبارها'], [/^POST \/inventory\/stock-count/, 'انبارگردانی'],
   [/^POST \/parties/, 'ایجاد طرف‌حساب'], [/^PATCH \/parties/, 'ویرایش طرف‌حساب'], [/^DELETE \/parties/, 'حذف طرف‌حساب'],
   [/^POST \/expenses/, 'ثبت هزینه'], [/^DELETE \/expenses/, 'حذف هزینه'],
+  [/^POST \/withdrawals/, 'ثبت برداشت از حساب'], [/^DELETE \/withdrawals/, 'حذف برداشت از حساب'],
   [/^POST \/users\/:id\/reset-password/, 'بازنشانی رمز کاربر'], [/^POST \/users/, 'ایجاد کاربر'], [/^PATCH \/users/, 'ویرایش کاربر'],
   [/^PATCH \/tenants/, 'ویرایش مشخصات فروشگاه'], [/^POST \/auth\/change-password/, 'تغییر رمز عبور'],
   [/^(POST|PATCH|DELETE) \/(brands|categories|units|vehicles|warehouses)/, 'تغییر اطلاعات پایه'],

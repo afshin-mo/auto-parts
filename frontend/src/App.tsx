@@ -15,6 +15,7 @@ const Parties = lazy(() => import('./pages/Parties'));
 const PartyStatement = lazy(() => import('./pages/PartyStatement'));
 const Inventory = lazy(() => import('./pages/Inventory'));
 const Duplicates = lazy(() => import('./pages/Duplicates'));
+const Withdrawals = lazy(() => import('./pages/Withdrawals'));
 const Checks = lazy(() => import('./pages/Checks'));
 const Payments = lazy(() => import('./pages/Payments'));
 const Reports = lazy(() => import('./pages/Reports'));
@@ -52,6 +53,7 @@ export default function App() {
         <Route path="returns" element={<Returns />} />
         <Route path="returns/:id" element={<InvoiceView kind="returns" />} />
         <Route path="expenses" element={<Expenses />} />
+        <Route path="withdrawals" element={<Withdrawals />} />
         <Route path="labels" element={<Labels />} />
         <Route path="purchases" element={<Sales kind="purchases" />} />
         <Route path="purchases/new" element={<InvoiceForm kind="purchases" />} />
